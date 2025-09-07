@@ -1,40 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ALX Listing App
 
-## Getting Started
+## 📌 Project Overview
 
-First, run the development server:
+The **ALX Listing App** is a scaffolded Next.js project designed as the foundation for building an **Airbnb clone**.  
+This milestone sets up the project structure, TypeScript integration, ESLint, TailwindCSS, and reusable components, ensuring a **well-structured and maintainable codebase**.
+
+The main goal of this project is to provide a responsive and clean listing page where users can browse property cards and interact with reusable UI elements such as buttons.
+
+---
+
+## 🗂️ Project Structure
+
+alx-listing-app/
+│
+├── components/
+│ └── common/
+│ ├── Card.tsx # Reusable card component for property listings
+│ ├── Button.tsx # Reusable button component for actions (e.g., "Book Now")
+│
+├── interfaces/
+│ └── index.ts # TypeScript interfaces (e.g., CardProps, ButtonProps)
+│
+├── constants/
+│ └── index.ts # Global constants (API URLs, config values, UI text)
+│
+├── public/
+│ └── assets/ # Exported assets (images, SVGs, placeholders, etc.)
+│
+├── pages/
+│ ├── index.tsx # Main entry point (listing page)
+│ └── \_app.tsx # Custom app configuration
+│
+├── styles/
+│ └── globals.css # Tailwind base, components, and utilities
+│
+├── tailwind.config.js # Tailwind configuration
+└── tsconfig.json # TypeScript configuration
+
+### Directory Purpose:
+
+- **components/** → Reusable UI components (Card, Button, etc.).
+- **interfaces/** → TypeScript interfaces for props and types.
+- **constants/** → Centralized constants for configuration and text.
+- **public/assets/** → Images, icons, and other static assets.
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
 
 ```bash
+git clone <repository-url>
+cd alx-listing-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+Open the app
+Visit http://localhost:3000
+ in your browser.
+
+ Tech Stack
+
+Next.js (Pages Router)
+TypeScript (type safety)
+TailwindCSS (styling)
+ESLint (linting & clean code)
+
+Notes
+Assets should be placed inside public/assets/.
+Only Tailwind’s base, components, and utilities are imported in globals.css.
+Project uses Pages Router (not App Router) and avoids the src/ directory for simplicity.
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
