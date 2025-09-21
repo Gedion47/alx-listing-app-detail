@@ -1,9 +1,9 @@
 import caseminimal from "@/public/assets/Icons/Linear/School/Case Minimalistic.svg";
 import Image from "next/image";
 import ALXlogo from "@/public/assets/Logos/ALXlogo.svg";
-/* import Button from "@/components/layout/Button"; */
+import Button from "@/components/layout/Button";
 import search from "@/public/assets/Icons/Search.svg";
-/* import { FiltererContainer } from "../Filterer"; */
+import { FiltererContainer } from "../Filterer";
 import React, { useState } from "react";
 
 const Header = () => {
